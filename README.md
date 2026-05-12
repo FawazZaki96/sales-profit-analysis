@@ -10,7 +10,7 @@ This project analyzes sales and profitability performance to identify key busine
 
 * Source: Superstore Sales Dataset
 * Total Orders: 9,994
-* Tools Used: Excel, Power BI
+* Tools Used: Excel, Power BI, SQL (SQLite)
 
 ---
 
@@ -21,6 +21,19 @@ This project analyzes sales and profitability performance to identify key busine
 * Are there categories with high sales but low profit?
 * Which region performs best?
 * How do sales trends change over time?
+* How do discounts impact profitability?
+* Which customer segments contribute the most profit?
+
+---
+
+## 🛠️ Tools & Technologies
+
+| Tool | Purpose |
+|------|----------|
+| Excel | Data cleaning and preparation |
+| Power BI | Dashboard visualization and KPI reporting |
+| SQL (SQLite) | Business analysis and data querying |
+| DBeaver | SQL query execution and database management |
 
 ---
 
@@ -46,8 +59,28 @@ This project analyzes sales and profitability performance to identify key busine
 4. **West region leads in profit**
    The West region contributes the highest profit, suggesting stronger market or operational performance.
 
-5. **Sales increase toward year-end (Q4)**
-   Sales trends show consistent growth toward the end of the year, indicating seasonality and higher demand in Q4.
+5. **High sales do not always indicate high profit**
+   Several analyses revealed that strong sales performance does not necessarily translate into profitability. High discounts and operational costs significantly impacted profit margins in certain categories, regions, and customers.
+
+6. **Heavy discounting negatively impacts profitability**
+   SQL analysis showed that profit performance started turning negative around the 30% discount level, with 40%–50% discounts appearing financially unhealthy for the business.
+
+---
+
+## 🗄️ SQL Analysis
+
+Additional SQL analysis was conducted using SQLite and DBeaver to further investigate profitability, customer behavior, discount impact, and regional performance.
+
+### SQL Topics Covered
+
+* Sales overview analysis
+* Category & sub-category profitability
+* Customer profitability analysis
+* Regional performance analysis
+* Discount impact analysis
+* Customer segment analysis
+
+📂 SQL scripts available in the [`sql`](sql) folder.
 
 ---
 
@@ -56,6 +89,7 @@ This project analyzes sales and profitability performance to identify key busine
 * Improve profitability in Furniture by reviewing pricing, discount strategies, and cost structure.
 * Invest more in Technology products to maximize high-margin opportunities.
 * Replicate successful strategies from the West region in other regions.
+* Review aggressive discounting strategies that negatively impact profitability.
 * Prepare inventory and marketing strategies ahead of Q4 to capitalize on seasonal demand.
 
 ---
@@ -63,6 +97,3 @@ This project analyzes sales and profitability performance to identify key busine
 ## 📊 Dashboard Preview
 
 ![Dashboard](images/dashboard.png)
-
-
-
